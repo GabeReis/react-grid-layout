@@ -225,6 +225,7 @@ export default class GridItem extends React.Component<Props, State> {
       this.props.y,
       this.props.w,
       this.props.h,
+      null,
       this.state
     );
     const newPosition = calcGridItemPosition(
@@ -233,6 +234,7 @@ export default class GridItem extends React.Component<Props, State> {
       nextProps.y,
       nextProps.w,
       nextProps.h,
+      null,
       nextState
     );
     return (
@@ -627,6 +629,7 @@ export default class GridItem extends React.Component<Props, State> {
       y,
       w,
       h,
+      this.props.customLeftOffset,
       this.state
     );
     const child = React.Children.only(this.props.children);
